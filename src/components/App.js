@@ -15,7 +15,7 @@ function App() {
         <div className="my-10 relative  w-full flex items-center justify-between sm:px-8">
           <AllEmojis />
         </div>
-        {emojis.length < 1 && <Placeholder />}
+        {emojis?.length < 1 && <Placeholder />}
         <Emojis />
       </main>
     </div>

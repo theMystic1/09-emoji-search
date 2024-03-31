@@ -16,7 +16,7 @@ export async function getEmojis() {
 
 export async function searchEmoji(query) {
   const data = await getEmojis();
-  const searcheData = data.filter((dataName) =>
+  const searcheData = data?.filter((dataName) =>
     dataName.name.toLowerCase().includes(query.toLowerCase())
   );
 
