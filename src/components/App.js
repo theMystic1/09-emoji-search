@@ -1,9 +1,9 @@
 import Nav from "./Nav";
-import Emojis from "./components/Emojis";
-import AllEmojis from "./components/AllEmojis";
+import Emojis from "./Emojis";
+import AllEmojis from "./AllEmojis";
 import Loader from "./Loader";
-import Placeholder from "./components/Placeholder";
-import { useEmojis } from "./contexts/EmojisContext";
+import Placeholder from "./Placeholder";
+import { useEmojis } from "../contexts/EmojisContext";
 
 function App() {
   const { isLoading, emojis } = useEmojis();
