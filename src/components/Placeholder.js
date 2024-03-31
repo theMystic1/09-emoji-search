@@ -1,4 +1,7 @@
-function Placeholder({ handleSearch, setQuery }) {
+import { useEmojis } from "../contexts/EmojisContext";
+
+function Placeholder() {
+  const { handleSearch, setQuery } = useEmojis();
   async function search(data) {
     handleSearch(data);
     setQuery(data);

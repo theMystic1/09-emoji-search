@@ -1,6 +1,9 @@
-import { getEmojis } from "./services/apiCall";
+import { useEmojis } from "../contexts/EmojisContext";
+import { getEmojis } from "../services/apiCall";
 
-function AllEmojis({ setEmojis, setIsLoading, emojis }) {
+function AllEmojis() {
+  const { setEmojis, setIsLoading, emojis } = useEmojis();
+
   async function getAllEmojis() {
     setIsLoading(true);
     try {

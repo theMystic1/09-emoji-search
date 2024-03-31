@@ -1,4 +1,7 @@
-function Form({ query, setQuery, handleSearch }) {
+import { useEmojis } from "../contexts/EmojisContext";
+
+function Form() {
+  const { query, setQuery, handleSearch } = useEmojis();
   async function search(e) {
     e.preventDefault();
 
